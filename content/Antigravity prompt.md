@@ -2,6 +2,7 @@
 ## Global Rules
 
 
+
 ## Gemini Added Memories
 
   
