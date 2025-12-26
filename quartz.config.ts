@@ -23,31 +23,31 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Noto Sans",
-        body: "Noto Sans",
-        code: "Noto Sans",
+        header: "Inter",
+        body: "Inter",
+        code: "Fira Code",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#f8fafc", // Slate 50
+          lightgray: "#e2e8f0", // Slate 200
+          gray: "#94a3b8", // Slate 400
+          darkgray: "#475569", // Slate 600
+          dark: "#1e293b", // Slate 800
+          secondary: "#2563eb", // Blue 600
+          tertiary: "#3b82f6", // Blue 500
+          highlight: "rgba(59, 130, 246, 0.1)", // Blue 500 with opacity
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#0f172a", // Slate 900
+          lightgray: "#1e293b", // Slate 800
+          gray: "#475569", // Slate 600
+          darkgray: "#cbd5e1", // Slate 30slate 300
+          dark: "#f1f5f9", // Slate 100
+          secondary: "#60a5fa", // Blue 400
+          tertiary: "#3b82f6", // Blue 500
+          highlight: "rgba(59, 130, 246, 0.15)",
           textHighlight: "#b3aa0288",
         },
       },

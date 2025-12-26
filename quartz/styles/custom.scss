@@ -1,9 +1,12 @@
 @use "./base.scss";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 // put your custom CSS here!
-// 예시: 전체적인 폰트를 조금 더 깔끔하게 변경
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.75;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
 }
 
 // 예시: 링크에 마우스를 올렸을 때 밑줄 없애기
@@ -13,8 +16,75 @@ a:hover {
 
 // 예시: 인용문 블록 디자인 변경
 blockquote {
-    border-left: 4px solid var(--secondary); // 포인트 색상으로 테두리
-    background-color: var(--highlight); // 형광펜 색으로 배경
-    padding: 1em;
-    border-radius: 8px; // 둥근 모서리
+    border-left: 4px solid var(--secondary);
+    background-color: var(--highlight);
+    padding: 1.25em 1.5em;
+    border-radius: 12px;
+    margin: 1.5em 0;
+    font-style: italic;
+    color: var(--darkgray);
+}
+
+// Typography 고도화
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    border-bottom: 1px solid var(--lightgray);
+    padding-bottom: 0.3rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+// AI 튜터 전용 콜아웃 (Obsidian Callout 연동)
+.callout[data-callout="tutor-quiz"] {
+    --color: #3b82f6;
+    --border: #bfdbfe;
+    --bg: rgba(59, 130, 246, 0.05);
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--color);
+    border-radius: 8px;
+}
+
+.callout[data-callout="tutor-hint"] {
+    --color: #10b981;
+    --border: #d1fae5;
+    --bg: rgba(16, 185, 129, 0.05);
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--color);
+    border-radius: 8px;
+}
+
+.callout[data-callout="tutor-note"] {
+    --color: #8b5cf6;
+    --border: #ddd6fe;
+    --bg: rgba(139, 92, 246, 0.05);
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--color);
+    border-radius: 8px;
+}
+
+// 이미지 가독성 및 캡션
+img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 2rem 0;
 }
